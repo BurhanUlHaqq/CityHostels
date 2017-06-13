@@ -1,0 +1,44 @@
+
+#heading{
+	height: 100px;
+	width: 100%;
+	background-color: gray;
+	background: rgba(76, 175, 180, 0.9);
+}
+
+
+.ads{
+	height: 100px; 
+	width: 20%; 
+	border-radius: 5px;
+	margin: 30px 27px;
+	display: inline-block;
+	background-color: rgba(28, 32, 33, 0.4);
+}
+ #footerNav{
+ 	list-style-type: none;
+ 	padding: 10px;
+
+ }
+ .footerNavItem{
+ 	float: left;
+ }
+
+ .footerNavItem a{
+ 	text-align: center;
+	text-decoration: none;
+	color: rgba(500, 500, 500, 0.8);
+	width: 150px;
+	margin-right: 1px;
+ }
+
+
+ #cityNavList{
+ 	float: left;
+ 	color: white;
+ 	padding: 5px;
+ }
+
+ #cityNavList a{
+ 	color: white;
+ }

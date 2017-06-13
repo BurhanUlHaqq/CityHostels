@@ -1,0 +1,10 @@
+#footerList{
+	list-style-type: none;
+}
+
+.footerListItem{
+	float: left;
+	padding-top: 15px;
+	padding-right: 15px;
+	
+}

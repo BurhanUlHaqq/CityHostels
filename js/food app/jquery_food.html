@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>jQuery Food</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap-3.3.6.css">
+		<script type="text/javascript" src="../javascripts/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="application.js"></script>
+		<style type="text/css">
+			.main {
+				float: left;
+				height: 90%;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>jQuery Food</h1>
+		</center>
+		
+		<div id="menu_items" class="main" style="width: 25%">
+			<center>
+				<h4>Items Menu</h4>
+				<hr />
+			</center>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<td>#</td>
+						<td>Name</td>
+						<td>Price</td>
+						<td>Action</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="menu_item">
+						<td class="item_id">1</td>
+						<td class="item_name">Chicken Karhaei</td>
+						<td class="item_price" data-price="800">Rs. 800/=</td>
+						<td><button class="btn btn-success select_item">Select</button></td>
+					</tr>
+					<tr class="menu_item">
+						<td class="item_id">2</td>
+						<td class="item_name">Mutton Karhaei</td>
+						<td class="item_price" data-price="1800">Rs. 1800/=</td>
+						<td><button class="btn btn-success select_item">Select</button></td>
+					</tr>
+					<tr class="menu_item">
+						<td class="item_id">3</td>
+						<td class="item_name">Chicken Tikka</td>
+						<td class="item_price" data-price="180">Rs. 180/=</td>
+						<td><button class="btn btn-success select_item">Select</button></td>
+					</tr>
+					<tr class="menu_item">
+						<td class="item_id">4</td>
+						<td class="item_name">Daal Maash</td>
+						<td class="item_price" data-price="80">Rs. 80/=</td>
+						<td><button class="btn btn-success select_item">Select</button></td>
+					</tr>
+					<tr class="menu_item">
+						<td class="item_id">5</td>
+						<td class="item_name">Salad</td>
+						<td class="item_price" data-price="50">Rs. 50/=</td>
+						<td><button class="btn btn-success select_item">Select</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="order" class="main" style="width: 45%">
+			<div class="container" style="width: 100%;">
+				<center>
+					<h4>Customer Details</h4>
+					<hr />
+				</center>
+				<form class="form-inline" style="text-align: center">
+					<fieldset>
+
+						<div class="control-group">
+							<div class="controls">
+								<label class="control-label">Name: </label>
+								<br />
+								<input type="text" name="customer_name" id="customer_name" value="" />
+							</div>
+						</div>
+
+						<br />
+						<div class="control-group">
+							<div class="controls">
+								<label class="control-label">Address: </label>
+								<br />
+								<textarea rows="08" cols="20" name="customer_address" id="customer_address" value=""></textarea>
+							</div>
+						</div>
+
+						<br />
+						<div class="control-group">
+							<div class="controls">
+								<label class="control-label">Phone Number: </label>
+								<br />
+								<input type="text" name="customer_phone" id="customer_phone" value="" />
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<div id="preview" class="main" style="width: 25%">
+			<center>
+				<h4>Preview Order</h4>
+				<hr />
+			</center>
+			<div>
+				<strong>Name:</strong> <span id="customer_name_preview"></span> <br />
+				<strong>Address:</strong> <span id="customer_address_preview"></span> <br />
+				<strong>Phone:</strong> <span id="customer_phone_preview"></span> <br />
+			</div>
+
+			<br />
+
+			<table id="preview_items" class="table table-striped">
+				<thead>
+					<td>Name</td>
+					<td>Quantity</td>
+					<td>Price</td>
+				</thead>
+			</table>
+
+			<div>
+				<strong>Order Total: Rs.</strong> <span id="order_total">0</span>/=
+			</div>
+		</div>
+
+	</body>
+</html>
